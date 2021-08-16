@@ -123,6 +123,10 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
 }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #343A40 !important;
+    border-color: #343A40 !important;
+}
 </style>
 
 <style>

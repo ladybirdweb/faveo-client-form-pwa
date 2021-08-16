@@ -42,17 +42,11 @@ Vue.component('vue-headful', vueHeadful);
 
 Vue.use(require('vddl'));
 
-// Vue.component('loader', require('./components/Client/Pages/ReusableComponents/Loader'));
-
 Vue.component('form-entry', require('./components/Client/FaveoFormClientPanel'));
 
-// Vue.component('reset-password', require('./components/Client/Pages/Auth/PasswordReset'));
-
-// Vue.component('meta-component', require('./components/Client/Pages/MetaComponent.vue'));
-
-// Vue.component('license-error', require('./components/Client/Pages/NotFound/LicenseError'));
-
 Vue.component('form-renderer', require('./components/Common/Form/FormRenderer'));
+
+Vue.component('bounce-loader', require('vue-spinner/src/BounceLoader.vue'));
 
 Vue.filter('truncate', function (str, max) {
         return str.length > max ? str.substr(0, max - 1) + '…' : str;

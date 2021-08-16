@@ -4,7 +4,7 @@
       <div class="overlay-loader"></div>
       <clip-loader size="50px" class="loader-position"></clip-loader>
     </span>
-    <fulfilling-bouncing-circle-spinner v-else :animation-duration="duration" :size="size" color="#1d78ff"/>
+    <fulfilling-bouncing-circle-spinner v-else :animation-duration="duration" :size="size" color="#343A40"/>
   </div>
 </template>
 <script>

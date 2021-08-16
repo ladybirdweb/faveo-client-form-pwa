@@ -2,7 +2,7 @@
 
         <div>
             <div class="center-of-page">
-                <spinner :animation-duration="duration" :size="60" :color="color" ></spinner>
+                <bounce-loader size="60px" class="loader-position" :color="color"></bounce-loader>
             </div>
             <div class="full-page"></div>
         </div>
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-    import { FulfillingBouncingCircleSpinner } from 'epic-spinners';
+    import BounceLoader from 'vue-spinner/src/BounceLoader.vue'
 
     export default {
         components:{
-            'spinner':FulfillingBouncingCircleSpinner
+            'bounce-loader': BounceLoader
         },
         props:{
             duration:{type:Number, default: 4000},
