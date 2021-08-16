@@ -18,7 +18,7 @@
         },
         props:{
             duration:{type:Number, default: 4000},
-            color : { type : String, default : '#1d78ff'}
+            color : { type : String, default : '#343A40'}
         }
     };
 </script>
@@ -30,7 +30,7 @@
         text-align: center;
         position: fixed;
         top: 25%;
-        left: 25%;
+        left: 12%;
         transform: translate(-50%, -50%);
         transform: -webkit-translate(-50%, -50%);
         transform: -moz-translate(-50%, -50%);
