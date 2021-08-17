@@ -1,6 +1,6 @@
 const config = {
 	"apiBaseURL" : "http://faveo.pro",
 	"theme" : "bg-dark navbar-dark",
-	"color" : "yellow",
-	"defaultRequesterID": 0
+	"color" : "green",
+	"defaultRequester": 0
 }

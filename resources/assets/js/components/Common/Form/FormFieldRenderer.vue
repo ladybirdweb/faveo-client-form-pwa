@@ -33,7 +33,7 @@
 
     <text-field v-if="formField.type === 'text' || formField.type === 'textarea' || formField.type === 'number' || formField.type === 'email'" :id="formField.unique" :label="formField.label" :type="formField.type" :name="formField.unique" :value="selectedValue" :onChange="onChange" :required="isRequiredField" :isInlineForm="true" :rules="validationRules" :pattern="formField.pattern" :hint="formField.description" :validation-message="formField.validation_message" :tip-rule="formField.show_description_under_form_field"></text-field>
 
-    <client-requester v-if="formField.type === 'client-panel-requester'" :id="formField.unique" :label="formField.label" :name="formField.unique" :value="selectedValue" :onChange="onChange" :required="isRequiredField" :isInlineForm="true" :hint="formField.description" :rules="validationRules" :actionBtn="getActionButtonObj" :tip-rule="formField.show_description_under_form_field"></client-requester>
+    <client-requester v-if="formField.type === 'client-panel-requester' && !customConfig.defaultRequester" :id="formField.unique" :label="formField.label" :name="formField.unique" :value="selectedValue" :onChange="onChange" :required="isRequiredField" :isInlineForm="true" :hint="formField.description" :rules="validationRules" :actionBtn="getActionButtonObj" :tip-rule="formField.show_description_under_form_field"></client-requester>
 
     <radio-field v-if="formField.type === 'radio'" :name="formField.label" :label="formField.label" :hint="formField.description" :required="isRequiredField" :options="formField.options" :value="selectedValue" :onChange="onChange" :isInlineForm="true" :rules="validationRules" :tip-rule="formField.show_description_under_form_field"></radio-field>
 
@@ -101,7 +101,9 @@ export default {
       // if true one pop-up will appear to create new requester/user
       showCreateUserModal: false,
 
-      attachments : []
+      attachments : [],
+
+      customConfig : config
     }
   },
 
@@ -111,7 +113,6 @@ export default {
     if(this.formField.type === 'select') {
       this.getSelectFieldOptions()
     }
-
   },
 
   mounted () {
@@ -124,6 +125,10 @@ export default {
 
     // update form-value object with current selected value. In case of create it will be empty, in case of edit it may have some value
     this.updateFormValuesToStore();
+
+    if(config.defaultRequester && this.formField.type === 'client-panel-requester') {
+        this.onChange(config.defaultRequester, 'requester');
+    }
   },
 
   computed: {
