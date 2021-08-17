@@ -18,7 +18,7 @@
         },
         props:{
             duration:{type:Number, default: 4000},
-            color : { type : String, default : '#343A40'}
+            color : { type : String, default : config.color}
         }
     };
 </script>

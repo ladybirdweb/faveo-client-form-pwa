@@ -4,7 +4,7 @@
       <div class="overlay-loader"></div>
       <clip-loader size="50px" class="loader-position"></clip-loader>
     </span>
-    <fulfilling-bouncing-circle-spinner v-else :animation-duration="duration" :size="size" color="#343A40"/>
+    <fulfilling-bouncing-circle-spinner v-else :animation-duration="duration" :size="size" :color="style.color"/>
   </div>
 </template>
 <script>
@@ -24,7 +24,12 @@
         default: 60
       }
     },
-    	components: {
+    data: () => {
+      return {
+        style : config
+      }
+    },
+    components: {
             "clip-loader": ClipLoader,
             'fulfilling-bouncing-circle-spinner':FulfillingBouncingCircleSpinner,
         },

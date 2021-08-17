@@ -108,7 +108,7 @@ window.axios.interceptors.response.use((response) => {
 });
 
 // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = document.head.querySelector('meta[name="api-base-url"]').content;
+window.axios.defaults.baseURL = config.apiBaseURL;
 
 
 /*

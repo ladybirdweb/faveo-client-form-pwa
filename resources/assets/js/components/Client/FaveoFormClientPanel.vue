@@ -29,7 +29,7 @@
 
           <div class="form-group row" v-show="!showLoader">
             <div class="col-md-12">
-              <button type="submit" class="btn btn-primary pull-right" :disabled="submitFormInProgress" @click="popUpSubmit()">
+              <button type="submit" class="btn btn-primary pull-right" :disabled="submitFormInProgress" @click="popUpSubmit()" :style="themeStyle">
                 <span><i class="fas fa-save"></i></span>
                 {{ trans('submit') }}
               </button>
@@ -91,6 +91,11 @@ export default {
       return this.currentPath().indexOf('edit') !== -1 ? 'edit' : 'create';
     },
 
+    themeStyle() {
+        return {
+            '--style-color' : config.color
+        }
+    }
   },
 
   methods: {
@@ -138,8 +143,8 @@ export default {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus {
-    background-color: #343A40 !important;
-    border-color: #343A40 !important;
+    background-color: var(--style-color) !important;
+    border-color: var(--style-color) !important;
 }
 </style>
 

@@ -36,7 +36,7 @@
 
       <div slot="controls">
         <button type="submit" class="btn btn-primary pull-right" :disabled="submitFormInProgress"
-                @click="popUpSubmit()">
+                @click="popUpSubmit()" :style="themeStyle">
           <span><i class="fas fa-save"></i></span>
           {{ trans('submit') }}
         </button>
@@ -107,6 +107,13 @@ export default {
       this.closeModal();
     }
   },
+  computed: {
+    themeStyle() {
+        return {
+            '--style-color' : config.color
+        }
+    }
+  },
 
   components: {
     'modal': Modal,
@@ -124,8 +131,8 @@ export default {
   overflow-x: hidden;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus {
-    background-color: #343A40 !important;
-    border-color: #343A40 !important;
+    background-color: var(--style-color) !important;
+    border-color: var(--style-color) !important;
 }
 </style>
 
