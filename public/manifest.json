@@ -1,6 +1,11 @@
 {
   "short_name": "Faveo PWA",
   "name": "Faveo Client Lite",
+  "display":"fullscreen",
+  "background_color":"#40A6D7",
+  "theme_color":"#40A6D7",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "120X120-01.png",
@@ -28,6 +33,12 @@
       "sizes": "192X192"
     },
     {
+      "src": "maskable_icon_x192.png",
+      "type": "image/png",
+      "sizes": "192X192",
+      "purpose": "maskable"
+    },
+    {
       "src": "384X384-01.png",
       "type": "image/png",
       "sizes": "384X384"
@@ -43,14 +54,9 @@
       "sizes": "72x72"
     },
     {
-      "src": "96x96",
+      "src": "96x96-01.png",
       "type": "image/png",
       "sizes": "96x96"
     }
-  ],
-  "start_url": "/",
-  "background_color": "#000000",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#000000"
+  ]
 }
