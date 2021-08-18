@@ -23,8 +23,7 @@
             <div class="slot-container">
               <slot></slot>
               <template v-if="hint !='' && tipRule">
-                
-                <div class="text-small"><i class="fas fa-question-circle text-primary"> </i> <em v-html="getHint(hint)"></em></div>
+                <div class="text-small"><span class="tooltip-fas-icon" :style="themeStyle"><i class="fas fa-question-circle"> </i></span> <em v-html="getHint(hint)"></em></div>
               </template>
               <div v-if="name in errors" class="error-block is-danger">{{errors[name]}}</div>
             </div>
@@ -118,7 +117,13 @@ export default {
       get() {
         return this.getValidationErrors;
       }
+    },
+    themeStyle() {
+        return {
+            '--style-color' : config.color
+        }
     }
+
   },
   watch: {
     errors(newValue) {
@@ -157,7 +162,9 @@ export default {
 </script>
 
 <style scoped>
-
+.tooltip-fas-icon {
+  color: var(--style-color);
+}
 .slot-container {
   width: inherit;
 }

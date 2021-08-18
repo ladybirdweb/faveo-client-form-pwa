@@ -1,6 +1,6 @@
 <template>
 
-    <span style="margin-left: 2px;position:relative;top:0px;color: #337ab7;" v-tooltip="message">
+    <span style="margin-left: 2px;position:relative;top:0px;" :style="themeStyle" v-tooltip="message" class="tooltip-fas-icon">
         <i class="fas fa-question-circle" v-bind:style="{fontSize:size}" style="cursor: help"></i>
     </span>
 
@@ -30,12 +30,21 @@
              */
             size: { type:String, default:'medium' },
         },
+        computed: {
+            themeStyle() {
+                return {
+                    '--style-color' : config.color
+                }
+            }
+        }
     };
 
 </script>
 
 <style type="text/css">
-
+    .tooltip-fas-icon {
+        color: var(--style-color);
+    }
 
     .tooltip {
         display: block !important;

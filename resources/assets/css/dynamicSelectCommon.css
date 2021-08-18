@@ -63,7 +63,8 @@
 }
 
 .faveo-dynamic-select .vs__dropdown-option--highlight{
-  background-color: #343A40;
+  background-color: #dce6f2;
+  color: #000;
 }
 
 .faveo-dynamic-select .vs__actions {
