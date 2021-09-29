@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+    
+    <title>Business 1st</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/kyc-2.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/icon-144x144.png">
+  </head>
+  <style>  
+.error {color: #FF0001;} 
+.reqError {
+                color: #ff0000; /*Red Color*/
+                font-weight: bold;
+            }
+</style>
+  <body>
+
+    <div class="ugf-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="navigation">
+              <div class="logo">
+                <a href="form.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="ugf-bg ufg-main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="ugf-form">
+              <form action="form.php">
+                <div class="input-block">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <span class="error">*</span>
+                        <input type="name" placeholder="Roy Ronald" class="form-control" id="name" name="name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="surname">Surname</label>
+                    <input type="surname" placeholder="Hussain" class="form-control" id="surname" name="surname">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <span class="error">*</span>
+                    <input type="email" placeholder="example@domain.com" class="form-control" id="email" name="email" required>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <div class="form-group country-select">
+                        <label for="nationality">Nationality</label>
+                        <span class="error">*</span>
+                        <div class="select-input choose-country">
+                          <span></span>
+                            <select class="form-control" name="nationality" required>
+                              <option value=""></option>
+                              <option value="Maltese">Maltese</option>
+                              <option value="EU Citizen">EU Citizen</option>
+                              <option value="Non-EU Citizen">Non-EU Citizen</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <div class="form-group department-select">
+                        <label for="department">Department</label>
+                        <span class="error">*</span>
+                        <div class="select-input choose-department">
+                          <span></span>
+                            <select class="form-control" name="department" required>
+                              <option value=""></option>
+                              <option value="Family Business">Family Business</option>
+                              <option value="DIER">DIER</option>
+                              <option value="CEO Office">CEO Office</option>
+                              <option value="ME BDM">ME BDM</option>
+                              <option value="Environmental Health">Environmental Health</option>
+                              <option value="Customs">Customs</option>
+                              <option value="M&S Division ERDF">M&S Division ERDF</option>
+                              <option value="MTA">MTA</option>
+                              <option value="Business1st">Business1st</option>
+                              <option value="IRD">IRD</option>
+                              <option value="VAT">VAT</option>
+                              <option value="Operation">Operation</option>
+                              <option value="Social Security">Social Security</option>
+                              <option value="Support">Support</option>
+                            </select>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group subject-select">
+                        <label for="subject">Subject Queries</label>
+                        <span class="error">*</span>
+                        <div class="select-input choose-subject">
+                          <span></span>
+                            <select class="form-control" name="subject1" required>
+                              <option value=""></option>
+                              <option value="Restart">Restart</option>
+                              <option value="Change to Grow">Change to Grow</option>
+                              <option value="Micro Invest Application Status">Micro Invest Application Status</option>
+                              <option value="Micro Invest - Additional Documentation Issue">Micro Invest - Additional Documentation Issue</option>
+                              <option value="Eco-Friendly Retail Investment Grant">Eco-Friendly Retail Investment Grant</option>
+                              <option value="StartInMalta">StartInMalta</option>
+                              <option value="Registering a Business">Registering a Business</option>
+                              <option value="Business Operations incl Permits">Business Operations incl Permits</option>
+                              <option value="Request for Industrial Land">Request for Industrial Land</option>
+                              <option value="Online Services Issues">Online Services Issues</option>
+                              <option value="Social Security Relations">Social Security Relations Employer/Employee</option>
+                              <option value="Taxation">Taxation</option>
+                              <option value="Brexit">Brexit</option>
+                              <option value="Trademark & Intellectual Property">Trademark & Intellectual Property</option>
+                              <option value="Business Termination/Liquidation">Business Termination/Liquidation</option>
+                              <option value="Foreign Direct Investment">Foreign Direct Investment</option>
+                              <option value="Enviromental Health Directorate">Enviromental Health Directorate</option>
+                              <option value="Malta Tourism Authority">Malta Tourism Authority</option>
+                              <option value="Business License">Business License</option>
+                              <option value="Support Measures & Incentives">Support Measures & Incentives</option>
+                              <option value="Regulated Professions">Regulated Professions</option>
+                              <option value="Functioning of e-Services">Functioning of e-Services</option>
+                              <option value="Others">Others</option>
+
+                            </select>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group business-type-select">
+                        <label for="business">Business Type</label>
+                        <span class="error">*</span>
+                        <div class="select-input choose-business-type">
+                          <span></span>
+                            <select class="form-control" name="business" required>
+                              <option value=""></option>
+                              <option value="Self Employed">Self Employed</option>
+                              <option value="Company LTD">Company LTD</option>
+                              <option value="Partnership">Partnership</option>
+                              <option value="In Formation">In Formation</option>
+                              <option value="Others">Others</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="com">Comment</label><br>
+                        <input type="com" class="form-control1" id="com" name="com" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <!-- <script src="js/countrySelect.min.js"></script> -->
+
+    <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+
+    
+    
