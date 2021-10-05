@@ -16,7 +16,7 @@
     "test"
   ],
   "devDependencies": {
-    "axios": "^0.18",
+    "axios": "^0.21",
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
