@@ -1,6 +1,6 @@
 <?php
 
-$to = "shalinidpi638@gmail.com, info@businessfirst.com.mt, derek.damato@businessfirst.com.mt, ashutosh.jakhotra@ladybirdweb.com";
+$to = ""; //replace coma separated email address(s) to which the app should send the mail
     
     
     $name = $_REQUEST['name'];

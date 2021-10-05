@@ -7,15 +7,22 @@ Form is built using Bootstrap and PHP Mail function. This form emails the field 
 - Apache/NGINX/IIS web server
 # How to use this?
 - To change the Look and feel of the page
-  - The main design is coming from file form.html
+  - The main design is coming from file form.html.
+  - We can add extra fields for the form by editing in form.html
   - Thank You page is thankyou.html
   - You can edit these 2 pages to change logo, look and feel etc
-- To change the TO email address edit form.php
+- Changes to be done if extra fields added 
+  - Call the function of extra fields by using their names in form.php
+  - To add the TO email address edit form.php
 
 
 
 
 
+
+
+
+	
 
 
 
