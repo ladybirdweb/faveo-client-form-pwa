@@ -49,6 +49,51 @@
                 });
             });
         }
+
+        function printTicket(ticketNumber) {
+      var printDiv = window.open('', '', 'height=350, width=300');
+      var data = `
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printing</title>
+<style type="text/css">
+  html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: table
+  }
+  #content {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      border-style: groove;
+  }
+  #printing-content {
+    border-style: solid;
+    margin: 30%;
+    padding: 5%;
+  }
+</style>
+</head>
+<body>
+<div id="content">
+  <div id="printing-content">
+    <img src="192X192-01.png" height="50px" width="50px"></a>
+      <h1>`+ticketNumber+`</h1>
+    </div>
+</div>
+</body>
+</html>`;
+      printDiv.document.write(data);
+      printDiv.document.close();
+      setTimeout(function(){printDiv.print();}, 200)
+      setTimeout(function(){printDiv.close();}, 200)
+    }
 	</script>
 </html>
 
