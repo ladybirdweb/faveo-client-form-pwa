@@ -119,8 +119,10 @@ export default {
         this.$store.dispatch('createNewFormInstance', { formUniqueKey, scenario: this.mode });
         this.formUniqueKey = formUniqueKey;
         this.updateCount();
-    },
-
+        if(config.default_print) {
+            printTicket(data.data.data.ticket_number);
+        }
+    }
   },
 
   components: {

@@ -81,6 +81,9 @@ export const faveoFormCommons = {
 
             axios.post(submitApiEndpoint, _formData, { headers })
             .then(response => {
+                if(response.data.data.ticket_number !== undefined) {
+                    response.data.message += ' <button onclick="printTicket(\''+response.data.data.ticket_number+'\')"> Click here to print.</button>'
+                }
                 successHandler(response, 'faveo-form');
 
               // Call afterSubmit function to perform postSubmit operations
