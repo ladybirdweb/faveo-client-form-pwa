@@ -27,7 +27,7 @@
     "jest-localstorage-mock": "^2.4.0",
     "laravel-mix": "^2.1.14",
     "moxios": "^0.4.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.14.3",
     "pre-commit": "^1.2.2",
     "promise": "^8.0.1",
