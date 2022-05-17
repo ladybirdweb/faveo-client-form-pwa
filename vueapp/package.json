@@ -62,7 +62,7 @@
     "fs": "0.0.1-security",
     "jest-canvas-mock": "^2.1.1",
     "lodash-core": "^0.8.1",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.20",
     "plyr": "^3.6.4",
     "select2": "^4.0.8",
