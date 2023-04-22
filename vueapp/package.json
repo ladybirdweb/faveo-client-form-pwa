@@ -68,7 +68,7 @@
     "select2": "^4.0.8",
     "store": "^2.0.12",
     "style-loader": "^0.20.3",
-    "tinymce": "^5.4.2",
+    "tinymce": "^5.10.7",
     "v-click-outside": "^3.1.2",
     "v-tooltip": "^2.0.0-rc.31",
     "vddl": "^0.7.1",
